@@ -1,0 +1,255 @@
+#social-media-icons a{
+    margin: 0px 5px;
+}
+#facebook-link i{
+    color: darkblue;
+}
+#instagram-link i{
+    color: darkred;
+}
+#twitter-link i{
+    color: #6060FF;
+}
+
+/* Landing Page */
+#slides-container{
+	position: relative;
+	overflow: hidden;
+	min-height: 500px;
+}
+.caption-text{
+	text-align: center;
+	position: relative;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+.slides{
+	position: absolute;
+	padding: 20px;
+	height: 100%;
+	opacity: 0;
+	top: 40px;
+}
+.slides .slide-img{
+	position: relative;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	filter: drop-shadow(0px 10px 3px grey);
+	max-height: 100%;
+}
+.show-slides{
+	opacity: 1;
+	top: 0px;
+}
+.product-caption{
+	display: none;
+	position: absolute;
+	right: -100%;
+	top: 50%;
+	width: 50%;
+	background-color: #F33;
+	opacity: .6;
+	color: aliceblue;
+	z-index: 100;
+	padding: 5px 1px;
+	transition: 0.5s ease-in-out;
+}
+.product-caption .btn-default{
+	border: 1px solid aliceblue;
+	font-weight: bolder;
+}
+.product-caption:hover{
+	opacity: 1;
+}
+.container-fluid{
+	background-color: aliceblue;
+}
+.action-link{
+	color: aliceblue;
+	text-decoration: none;
+	background-color: #F33;
+}
+
+/* Categories */
+#category-heading,
+#featured-heading{
+	margin-top: 100px;
+	padding: 10px auto;
+}
+.category-row{
+	padding: 20px;
+}
+.category-cards{
+	margin: 10px;
+	position: relative;
+	height: 250px;
+	overflow: hidden;
+	border-radius: 10px;
+}
+.category-image{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 1;
+	transition: 0.5s;
+}
+.category-desc{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	padding-top: 20%;
+	z-index: 4;
+	background-color: rgba(50,50,50,0.5);
+	opacity: 0;
+	transition: 0.5s;
+}
+.category-desc h1{
+	font-size: 1.6em;
+	color: aliceblue;
+	transform: translateY(-100%) scale(0);
+	transition: 0.5s;
+}
+.category-desc .category-action{
+	color: aliceblue;
+	padding: 10px 15px;
+	font-size: 1.4em;
+	background-color: #f33;
+	transform: scale(2);
+	transition: 0.5s;
+}
+.category-cards:hover .category-image{
+	transform: scale(2);
+}
+.category-cards:hover .category-desc{
+	opacity: 1;
+}
+.category-cards:hover .category-desc h1{
+	transform: translateY(0) scale(1);
+}
+.category-cards:hover .category-action{
+	transform: scale(1);
+}
+
+
+
+/* Featured Product */
+.featured-item{
+	display: flex;
+}
+.featured-item .product-properties{
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+}
+.featured-item .product-properties .properties{
+	margin: 10px;
+	padding: 10px;
+	border: 2px solid #ccc;
+	color: #f33;
+	font-weight: bolder;
+}
+.action-button{
+	background-color: #f33;
+	color: aliceblue;
+}
+
+/* Product multi-slider */
+.sliding-products-desc{
+	text-align: center;
+	color: #f33;
+	font-weight: bolder;
+}
+.each-product-slide img{
+	height: 250px;
+}
+
+/* More Items */
+.more-items{
+	display: flex;
+	flex-direction: column;
+}
+.more-items h2{
+	margin: 20px 0 0 10px;
+}
+.more-items .media{
+	border: 1px solid #ccc;
+	padding: 10px;
+	margin: 10px;
+}
+
+/* Brands */
+.available-brands{
+	margin-top: 60px;
+	margin-bottom: 60px;
+}
+.available-brands div{
+	height: 300px;
+}
+
+/* Client Quotes */
+.client-quotes{
+	background-image: url("../img/plainBG.jpeg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	position: relative;
+}
+.client-quotes div{
+	margin-top: 5%;
+	margin-bottom: 5%;
+}
+.quote-wrapper{
+	border-radius: 10px;
+	background: rgba(255,150,150,0.4);
+	padding: 50px 10px;
+	min-height: 350px;
+}
+.each-quote{
+	display: none;
+}
+.active{
+	display: block;
+}
+
+
+
+/* Badges Row */
+.badges-row{
+	background-color: #f33;
+	margin: 60px 0;
+}
+.badges-row .badges{
+	display: flex;
+	justify-content: space-between;
+	padding: 20px 30px;
+}
+.badges-row .badges .font-icon{
+	font-size: 3em;
+	color: aliceblue;
+	margin: 5px;
+}
+.badges-row .badges .badge-text{
+	flex: 2;
+	display: flex;
+	flex-direction: column;
+}
+.badges-row .badges .badge-text h3{
+	font-size: 1em;
+	color: aliceblue;
+	font-weight: bolder;
+}
+.badges-row .badges .badge-text p{
+	font-size: .8em;
+	color: aliceblue;
+	font-weight: bolder;
+}
+
+
+

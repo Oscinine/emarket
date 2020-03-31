@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css?family=Gugi|Josefin+Sans|Roboto|Sofia&display=swap');
+/*
+font-family: 'Roboto', sans-serif;
+font-family: 'Josefin Sans', sans-serif;
+font-family: 'Gugi', cursive;
+font-family: 'Sofia', cursive;
+*/
+:root{
+    --primary-color: #F33;
+    --light-font-color: aliceblue;
+}
+
+/* Global Navigation */
+#header{
+    background-color: var(--primary-color);
+}
+#user-links{
+    display: flex;
+    justify-content: space-evenly;
+}
+#logo,
+#user-links a{
+    color: var(--light-font-color);
+    font-family: 'Gugi', cursive;
+}
+
+.searchbar{
+    position: relative;
+}
+.searchbar input[type="text"]{
+    border: 0;
+    padding: 0 10px;
+    width: 100%;
+    height: 35px;
+    border-radius: 3px;
+    font-family: 'Gugi', cursive;
+}
+.searchbar .icon{
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: #062333;
+    width: 35px;
+    height: 100%;
+    border-radius: 3px;
+    color: #fff;
+}
+.searchbar .icon i{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    cursor: pointer;
+}
+/* /Global Navigation */
+
+
+/* Footer */
+
+footer{
+	padding-top: 30px;
+	padding-bottom: 30px;
+	background-color: aliceblue;
+}
+.contact,
+.services,
+.extras,
+.instagram-photos{
+	display: flex;
+	flex-direction: column;
+}
+.contact .social-media-icons{
+	width: 70%;
+	display: flex;
+	justify-content: space-between;
+}
+.services p{
+	display: flex;
+	flex-direction: column;
+}
+.instagram-images{
+	display: flex;
+	flex-direction: column;
+}
+.instagram-images .image-rows{
+	display: flex;
+}
+.instagram-images .image-rows a{
+	flex-basis: 30%;
+}
+.subscription-box{
+    margin-top: 20px; 
+    margin-bottom: 20px;
+}
+.support h2{
+    color: var(--primary-color);
+}
+.support p{
+    color: #333;
+}

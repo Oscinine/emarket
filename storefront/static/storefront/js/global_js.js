@@ -1,0 +1,1 @@
+//alert("From global JS");

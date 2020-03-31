@@ -1,0 +1,156 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  
+    <!-- Fontawesome -->
+    <!--<script src="https://use.fontawesome.com/afbd331d02.js"></script>-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+  
+
+    <!-- CUSTOM CSS -->
+    <link rel="stylesheet" href="{% static 'storefront/css/global_styles.css' %}">
+
+    <!-- Page specific CSS -->
+    {% block styles %}
+
+    {% endblock styles %}
+    <!-- Page specific CSS -->
+
+    <title>BEPS STOREFRONT</title>
+  </head>
+  <body>
+    <!-- Global Navigation -->
+    <nav class="container-fluid" id="header">
+      <div class="navbar row">
+        <div class="col-md-4 col-sm-12">
+          <a id="logo" class="navbar-brand" href="{% url 'storefront-home' %}">BEPS STORE</a>
+        </div>
+        <form action="#" class="col-md-3 col-sm-12 searchbar text-center">
+          <input type="text" placeholder="Search">
+          <div class="icon">
+            <i class="fas fa-search"></i>
+          </div>
+        </form>
+        <div class="col-md-2"></div>
+        <div class="col-md-3 col-sm-12 text-right" id="user-links">
+          <a class="col-xs-12" href="#">Login</a>
+          <a class="col-xs-12" href="#">Sell NOW!</a>
+        </div>
+      </div>
+    </nav> 
+    <!-- /Global Navigation -->
+
+    <!-- Dynamic content -->
+    {% block content %}
+
+    {% endblock content %}
+    <!-- /Dynamic content -->
+
+    <!-- Footer -->
+    <footer class="container-fluid">
+      <div class="contact-us row">
+        <div class="contact col-sm-12 col-md-6 col-xl-3">
+          <h2>Contact Us</h2>
+          <p>
+            <i class="fas fa-home"></i> 
+            <span>123 Main, Ghana</span>			
+          </p>
+          <p>
+            <i class="fas fa-email"></i> 
+            <span>info@beps.com</span>			
+          </p>
+          <p>
+            <i class="fas fa-phone"></i> 
+            <span>+233 554 665 235</span>			
+          </p>
+          <p>
+            <a href="#"><i class="fas fa-twitter-square"></i></a>
+            <a href="#"><i class="fas fa-facebook-square"></i></a>
+            <a href="#"><i class="fas fa-google-plus"></i></a>
+            <a href="#"><i class="fas fa-instagram"></i></a>
+          </p>
+        </div>
+        <div class="services col-sm-12 col-md-6 col-xl-3">
+          <h2>Our Services</h2>
+          <p>
+            <a href="#">Tamale</a>
+            <a href="#">Accra</a>
+            <a href="#">Kumasi</a>
+          </p>
+        </div>
+        <div class="extras col-sm-12 col-md-6 col-xl-3">
+          <h2>Extras</h2>
+          <a href="#">About Store</a>
+          <a href="#">Contact Us</a>
+          <a href="#">New Collection</a>
+          <a href="#">Latest News</a>
+          <a href="#">Our Sitemap</a>
+        </div>
+        <div class="instagram-photos col-sm-12 col-md-6 col-xl-3">
+          <h2>Follow Instagram</h2>
+          <div class="instagram-images">
+					<div class="image-rows">
+						<a href="#"><img src="{% static 'storefront/img/tv-systems.png' %}" width="80px"></a>
+						<a href="#"><img src="{% static 'storefront/img/electronics.png' %}" width="80px"></a>
+						<a href="#"><img src="{% static 'storefront/img/cam-group.png' %}" width="80px"></a>
+					</div>
+					<div class="image-rows">
+						<a href="#"><img src="{% static 'storefront/img/tv-systems.png' %}" width="80px"></a>
+						<a href="#"><img src="{% static 'storefront/img/electronics.png' %}" width="80px"></a>
+						<a href="#"><img src="{% static 'storefront/img/cam-group.png' %}" width="80px"></a>
+					</div>
+				</div>
+        </div>
+      </div>
+      <div class="subscription-box row">
+        <div class="support col-sm-12 col-md-4 col-xl-4">
+          <h2>Need Help? Call Our Award-winning</h2>
+          <p>Support Team 24/7 on +233 554 766 563</p>
+        </div>
+        <div class="col-sm-12 col-md-4 col-xl-4"></div>
+        <div class="subscribe col-sm-12 col-md-4 col-xl-4">
+          <form class="form-inline">
+            <label class="sr-only" for="email">E-mail</label>
+              <input type="text" class="form-control mb-2 mr-sm-2" id="email" placeholder="E-mail">
+            <button class="btn btn-primary mb-2" type="submit">Subscribe</button>
+          </form>
+        </div>
+      </div>
+      <div class="copyright">
+        <div class="payment-methods">
+          
+        </div>
+        <p class="text-center">
+          Beps &copy; 2020 Emarket. All Rights Reserved. Designed and developed by Oscinine Tech Solutions
+        </p>			
+      </div>
+    </footer>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <!--<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script> -->
+	<script
+	  src="https://code.jquery.com/jquery-3.4.1.min.js"
+	  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+	  crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    
+    <!-- CUSTOM JS -->
+    <script src="{% static 'storefront/js/global_js.js' %}"></script>
+
+    <!-- Page specific JS -->
+    {% block js %}
+
+    {% endblock js %}
+    <!-- /Page specific JS -->
+</body>
+</html>
